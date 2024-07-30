@@ -13,8 +13,13 @@ namespace MODEL.EMPLOYEE.SECTION
         //public string? MiddleName {get;set;}
         //public string? LastName {get;set;}
         public DateTime DOB { get;set;}
-        #region Navigation
 
+
+
+
+        #region Navigation
+        public List<Department>? Department { get; set; } = new();    
+        public List<Designation>? Designation { get; set; } = new ();
 
         #endregion Navigation
     }

@@ -10,7 +10,11 @@ namespace MODEL.EMPLOYEE.SECTION
     {
         public int DesignationId { get; set; }
         public string? DepartmentName { get; set; }
+
+
         #region Navigation
+        public int EmployeeId { get; set; }
+        public Employee? Employee { get; set; }
         #endregion Navigation
     }
 }

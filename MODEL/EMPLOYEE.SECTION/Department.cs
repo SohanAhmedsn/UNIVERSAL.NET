@@ -12,6 +12,8 @@ namespace MODEL.EMPLOYEE.SECTION
         public string? DepartmentName { get; set; }
 
         #region Navigation
+        public int EmployeeId { get; set; }
+        public Employee? Employee { get; set; }  
         #endregion Navigation
     }
 }
